@@ -1,0 +1,27 @@
+extends layout
+
+block content
+
+    div(class='container')
+    
+        div(class='title')
+            h1= title
+
+        div(class='row1')
+            div(class='col-sm')
+                h4 W naszej ofercie znajdą Państwo usługi związane z obsługą wydarzeń firmowych oraz rodzinnych. Oferujemy również serwis urządzeń. Zapraszamy do zapoznania się poprzez pobranie przygotowanych plików w formacie pdf:
+                h5 Wydarzenia
+                br
+                h5 Serwis
+
+        div(class='col', class='center')
+            div
+                form(action='/uslugi',method='post')
+                    input(type='text', name='file', class='form-control', placeholder='Wpisz nazwę oferty')
+                    input(type='submit', value='Pobierz')
+
+        div(class='col')
+            p(class=(error ? 'show' : 'hide')) Nie znaleziono podanego pliku oferty.
+
+block footer 
+    p 2021 &copy; Witaj w Świecie Kawy! Zpraszamy do kontaktu swiatkawy@com.pl   

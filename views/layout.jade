@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css', integrity='sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl', crossorigin='anonymous')
+    link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css')
+  body
+    div(class="row row-cols-1 row-cols-sm-2 row-cols-md-5")
+      div(class="col-6")
+        a(href='/')
+          h4 Strona Główna
+      div(class="col-6")
+        a(href='/oferty')
+          h4 Oferty specjalne
+      div(class="col-6")
+        a(href='/ekspresy')
+          h4 Ekspresy
+      div(class="col-6")
+        a(href='uslugi')
+          h4 Usługi
+      div(class="col-6")
+        a(href='/kontakt')
+          h4 Kontakt
+
+    block content
+     
+    block footer 
+    
